@@ -1,57 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-</head>
-<body>
-    <H1>Yassir Ugas</H1>
-    <HR />
-    <img src="./assets/yes sir.png" height="140"/>
-    <h2>Summary:</h2>
-    <p>Highly motivated and results-oriented individual with a background in banking and finance transitioning into web development. Skilled in bookkeeping, video editing, Graphic desiner, Photoshop, Excel, QuickBooks, and digital marketing. Eager to leverage strong communication skills, hard work ethic, and problem-solving abilities to create engaging and user-friendly websites.</p>
-    <h2>Education:</h2>
-    <p>University Of Somalia, Mogadishu, BA</p>
-    <ul>
-        <li>Bachelor of Science in Banking and Finance (Honors), [2023]</li>
-    </ul> 
-    <h2>Work Experience:</h2>
-    <ol>
-        <h3><li>Bookkeeper | Baffo Training and Consultancy(2020-2023).</li></h3>
-    </ol>
-    <ul>
-        <li>Managed financial records for a mid-sized training and consultancy firm, ensuring accuracy and compliance.</li>
-        <li>Processed invoices and payments, and maintained general ledgers.</li>
-        <li>Generated financial reports and provided insights to support business decisions.</li>
-    </ul>
-    <ol start="2">
-        <h3><li>Sales Representative | Baffo Training and Consultancy(2022-2023).</li></h3>
-    </ol>
-    <ul>
-        <li>Sold over 4k+ copies of the courses both online and in person.</li>
-        <li>Demonstrated strong interpersonal skills to engage with clients and drive sales.</li>
-    </ul>
-    <h2>Skills:</h2>
-    <ul>
-        <li>Web Development (HTML)</li>
-        <li>Video Editing.</li>
-        <li>Photoshop.</li>
-        <li>Strong Communication Skills.</li>
-        <li>Hardworking and Dedicated.</li>
-        <li>Digital Marketing Knowledge.</li>
-        <li>Excel and QuickBooks Proficiency.</li>
-        <li>Sales.</li>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 25px;
+    }
+
+    .pricing-plan {
+      background-color: #f2f2f2;
+      width: 500px;
+      height: 300px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-top: 13%;
     
-    </ul>
-    <h2>Soft Skills:</h2>
-    <ul>
-        <li>Excellent communicator.</li>
-        <Li>Strong time management and organizational skills.</Li>
-        <Li>Highly motivated and results-oriented.</Li>
-        <Li>Detail-oriented and meticulous.</Li>
-        <Li>Team player and collaborative.</Li>
-        <Li>Adaptable and eager to learn</Li>
-    </ul>
+    }
+
+    .plan-title {
+      font-weight: bold;
+      justify-self: center;
+      margin-left: 135px;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .plan-price {
+      font-size: 50px;
+      font-weight: bolder;
+      padding-left: 10px;
+      margin: 15px;
+    }
+
+    .plan-features {
+      margin-left: 21%;
+    }
+
+    .plan-button {
+      height: 40px;
+      width: 65px;
+      border-radius: 15%;
+      color: white;
+      border: 0;
+      padding: 0;
+      margin-left: 170px;
+      margin-top: 30px;
+      background-color: #ff6600;
+    }
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
 </body>
+
 </html>
